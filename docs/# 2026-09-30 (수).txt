@@ -1,0 +1,33 @@
+# 2026-09-30 (수)
+
+## 내 리포지토리 주소
+https://github.com/<sangjun123562>/security-agent-toolkit
+
+## requests 설치 및 실행
+- **가상환경 구성**: VS Code에서 `.venv` 가상환경(Python 3.12 기반)을 생성하고 커널로 지정함
+- **라이브러리 설치**: 터미널 대신 노트북 코드 셀 내에서 매직 커맨드 `%pip install requests`를 실행하여 설치 완료
+- **동작 검증**: `import requests` 코드를 셀에서 실행해 에러(ModuleNotFoundError) 없이 정상 임포트되는 것을 확인함
+
+## 오늘 만든 폴더
+- `agent_core/`: 보안 에이전트 1과목 실습 노트북 및 코드를 체계적으로 보관하는 폴더
+- `docs/`: 일자별 학습 기록, 트러블슈팅, 회고 문서를 아카이빙하는 폴더
+
+## 올린 노트북 (총 7개)
+1. `260922_variables_and_lists.ipynb`
+2. `260923_am_conditions_loops_counting.ipynb`
+3. `260923_pm_functions_files_csv.ipynb`
+4. `01_0928_am_exceptions_logging.ipynb`
+5. `02_0928_pm_nested_json.ipynb`
+6. `01_0929_am_regex_detection_rules.ipynb`
+7. `02_0929_pm_rules_api.ipynb`
+
+## 찾아보고 알게 된 것
+- **Git/GitHub의 빈 폴더 관리 특성**: Git은 빈 디렉터리를 단독으로 추적하지 않으므로, 웹 UI에서 `agent_core/README.md`처럼 파일 경로를 함께 입력해 커밋해야 폴더가 유지된다는 점을 이해함
+- **Jupyter 환경 격리**: 전역(Global) 파이썬 환경이 아니라 프로젝트 전용 `.venv` 커널에 패키지를 설치해야 프로젝트 간 의존성 충돌을 방지할 수 있음을 확인함
+- **보안 수칙 준수**: 실습 코드 관리 시 민감 정보(`.env` 환경변수 파일, API Key, 토큰 등)가 퍼블릭 리포지토리에 노출되지 않도록 제외하고 업로드해야 함
+
+## 막힌 것
+- 특이사항 없음 (만약 `%pip install` 시 ipykernel 설치 팝업이 뜨거나 가상환경 커널 인식이 늦어진 경우 해당 내용을 메모)
+
+## 다음에 확인할 것
+- 10/2(금) 아침: 준비된 `requests` 모듈을 활용해 실제 외부 API와 HTTP 요청(GET/POST) 및
