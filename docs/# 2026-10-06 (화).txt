@@ -1,0 +1,98 @@
+# 2026-10-06 (화)
+
+# 무료 Gemini API 키 발급 및 보안 보관 실습
+
+## 1. 사전 개념 탐구 (Why & What)
+
+### Q1. LLM을 API로 호출할 때 왜 API 키를 요구할까?
+
+- **사용자 식별 및 인증(Authentication):** 호출 주체가 누구인지 확인하여 허가된 사용자인지 검증합니다.
+- **사용량 추적 및 과금 통제:** 모델 사용량(토큰 수, 요청 수)을 측정하고 남용(DDoS, 악의적 대량 호출)을 방지합니다.
+- **키 유출 시 위험:** 키가 유출되면 타인이 내 할당량을 고갈시키거나 막대한 요금을 발생시킬 수 있습니다.
+
+### Q2. 보안 담당자의 서버 OS와 Git Bash 사용 이유
+
+- **서버 운영체제 점유율:** 클라우드 및 보안 인프라 서버의 대다수는 **Linux** 환경에서 구동됩니다.
+- **Git Bash 활용 이점:** 윈도우 환경에서도 Linux 표준 쉘인 `bash` 명령 체계(CLI 도구, 파이프라인, 쉘 스크립트 등)를 실무와 동일하게 익히고 사용할 수 있습니다.
+
+### Q3. 핵심 용어 정리
+
+- **LLM (Large Language Model):** 인간의 자연어 프롬프트를 텍스트로 입력받아 문맥을 분석한 뒤 적절한 답변 문장이나 코드를 생성하여 출력하는 대규모 언어 모델입니다.
+- **무료 등급 (Free Tier):** 비용 없이 API를 테스트할 수 있는 플랜이지만, 분당 요청 수(RPM, 분당 15회), 일일 요청 수(RPD), 동시 처리량 등에 엄격한 제한이 걸립니다.
+
+## 2. 작업 환경 점검 (VS Code & Git Bash)
+
+- **목적:** 모든 CLI 실습을 Linux 표준 Bash 터미널 환경에서 실행하기 위함
+- **확인 절차:**
+    1. VS Code 상단 메뉴: `Terminal` → `New Terminal`
+    2. 프롬프트 첫 줄 또는 타이틀에 **`MINGW64`** 가 표시되는지 확인
+    3. PowerShell(`PS C:\...`)로 실행되는 경우:
+        - `Ctrl + Shift + P` → `Terminal: Select Default Profile` 검색
+        - `Git Bash` 선택 후 새 터미널 오픈
+
+## 3. Gemini API 키 발급 절차
+
+1. **Google AI Studio 접속:** https://aistudio.google.com
+2. **로그인:** 학교/회사 계정이 아닌 개인 Gmail 계정으로 로그인 (관리자 정책 차단 방지)
+3. **키 발급:** `Get API key` → `Create API key` 클릭
+4. **키 복사:** `AIza...` 형태의 긴 문자열 복사
+5. **주의사항:** 결제 수단(카드 정보)은 일절 등록하지 않음 (무료 티어 유지)
+
+## 4. 환경 변수 보관 (.env) 및 유출 방지 (.gitignore)
+
+API 키는 패스워드와 같으므로 소스 코드에 하드코딩하지 않고 환경 변수 파일에 분리 보관합니다.
+
+### 1) `.env` 파일 생성 및 키 저장
+
+- **경로:** `security-agent-toolkit/.env`
+- **내용:** (등호 앞뒤 공백 없이 작성)Plaintext
+    
+    ```
+    GEMINI_API_KEY=발급받은_API_키
+    ```
+    
+- **터미널 확인:**Bash
+    
+    ```
+    $ pwd   # 현재 경로가 security-agent-toolkit 인지 확인
+    $ ls -a # .env 파일이 생성되었는지 확인
+    ```
+    
+
+### 2) `.gitignore` 파일 설정 (깃허브 유출 원천 차단)
+
+- **목적:** Git 추적 목록에서 `.env`를 제외시켜 실수로 GitHub 저장소에 Push되는 사고를 방지
+- **경로:** `security-agent-toolkit/.gitignore`
+- **내용:**Plaintext
+    
+    ```
+    .env
+    ```
+    
+- **터미널 확인:**Bash
+    
+    ```
+    $ ls -a # .env 와 .gitignore 가 함께 존재하는지 확인
+    ```
+    
+
+### ⚠️ 보안 수칙 3계명
+
+1. 단톡방, 메신저, 공개 채널에 키를 절대 복사/공유하지 않습니다.
+2. 화면 공유나 발표 시 `.env` 파일을 화면에 띄우지 않습니다.
+3. GitHub 웹 페이지에서 드래그 앤 드롭으로 파일을 직접 업로드하지 않습니다 (`.gitignore`는 웹 수동 업로드를 막아주지 못함).
+
+## 5. curl 명령어를 통한 API 키 유효성 검증
+
+`curl`과 HTTP 헤더(`-H`)를 사용하여 Gemini API 서버(`https://generativelanguage.googleapis.com`)에 모델 목록 조회를 요청하고 응답 상태를 검증했습니다.
+
+| **테스트 유형** | **명령어** | **기대 결과** | **학습한 이유 (동작 원리)** |
+| --- | --- | --- | --- |
+| **① 정상 요청** | `curl -H "x-goog-api-key: 내키" "https://generativelanguage.googleapis.com/v1beta/models"` | `"models": [...]` 목록 출력 | 유효한 API 키가 헤더에 실려 정상 인증 완료 (**200 OK**) |
+| **② 잘못된 키 요청** | `curl -H "x-goog-api-key: 끝글자뺀키" "https://generativelanguage.googleapis.com/v1beta/models"` | `UNAUTHENTICATED` (401) | 키 형식은 보냈으나 인증 시스템에 등록되지 않은 잘못된 신분증임 (**인증 실패**) |
+| **③ 헤더 누락 요청** | `curl "https://generativelanguage.googleapis.com/v1beta/models"` | `PERMISSION_DENIED` (403) | 신분증(헤더) 자체를 제출하지 않아 접근 권한이 없음 (**인가/접근 차단**) |
+
+### 💡 실습 시 유의할 점
+
+- **CLI 단축키:** `↑` 방향키로 직전 명령어를 재호출한 뒤 `←`, `→`로 수정하여 테스트 효율 향상
+- **Rate Limit (호출 한도):** 무료 키는 분당 15회(RPM)로 제한됨. 한도 초과 시 **`429 Too Many Requests`** 에러가 발생하므로 1분 대기 후 재시도 필요
