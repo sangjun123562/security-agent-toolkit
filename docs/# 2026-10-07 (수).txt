@@ -1,0 +1,52 @@
+# 2026-10-07 (수)
+
+오늘 한 일: 로컬 폴더와 깃허브 저장소 직접 연결
+작업 목적: clone으로 새로 내려받거나 폴더를 옮기지 않고, 기존 security-agent-toolkit 작업 폴더를 그 자리에서 깃허브 원격 저장소와 연결함
+
+작업 경로 확인: VS Code 통합 터미널에서 pwd 명령어로 현재 위치가 최상위 디렉터리(.../security-agent-toolkit)인지 확인 후 진행함
+
+단계별 Git 명령어 실행:
+
+git init -b main: 로컬 폴더에 Git 추적을 시작하고 기본 브랜치를 main으로 설정함 (기존 Git 설정이 감지되어 Reinitialized existing Git repository로 정상 반영됨)   
+PNG
+
+git remote add origin [https://github.com/](https://github.com/)<sangjun123562>/security-agent-toolkit.git: 깃허브 원격 저장소 주소를 origin이라는 이름으로 등록함
+
+git fetch origin: 깃허브에 웹으로 올렸던 기존 커밋 이력 메타데이터를 내 PC로 안전하게 내려받음
+
+git reset origin/main: 로컬 작업 파일은 그대로 보존하면서 커밋 기준점만 원격의 main 줄기에 맞춤 (--hard 옵션을 사용하지 않아 .env, 가상환경, 미반영 파일들이 안전하게 유지됨)
+
+찾아보고 알게 된 것
+Git으로 프로젝트를 관리하는 이유: 웹 화면에서 파일을 하나씩 수동 업로드하면 누락 위험이 크고 폴더 구조 관리가 번거로우나, Git을 쓰면 여러 파일의 변경 내역을 묶어서 버전 단위(Commit)로 안전하게 기록하고 동기화할 수 있음을 이해함
+
+저장소(Repository)와 원격(Remote):
+
+저장소: 코드와 커밋 이력이 기록되는 작업 공간 (내 PC는 로컬 저장소, 서버는 원격 저장소)
+
+원격 저장소(origin): 내 PC 외부(GitHub)에 있는 협업 및 백업 기준 저장소
+
+git reset과 --hard의 차이:
+
+옵션 없는 git reset <브랜치>는 파일 내용을 건드리지 않고 기준점만 변경하므로 로컬 작업 내역을 보존할 수 있음
+
+반면 --hard를 붙이면 내 PC의 파일들이 원격 상태로 덮어써져 작업 내용이 손실될 수 있다는 점을 확인함
+
+상태 검증 및 결과 분석 (git status)
+deleted: docs/...: 깃허브 원격 저장소에는 등록되어 있으나 현재 내 로컬 폴더에는 없는 문서 파일들로 확인됨   
+PNG
+
+Untracked files: .gitignore, agent_core/...: 깃허브에는 아직 반영되지 않았고 내 PC에만 새로 존재하는 최신 파일들로 감지됨   
+PNG
+
+분석 결과: git status에서 나타난 빨간색 텍스트는 오류가 아니라, 기존 로컬 파일들이 삭제되지 않고 유지된 상태에서 원격 기록과의 차이점을 Git이 정상 감지하고 있음을 확인함   
+PNG
+
+막힌 것
+특이사항 없음 (git init -b main 실행 시 Reinitialized existing Git repository 메시지가 나왔으나, 기존 설정을 유지한 채 정상 재초기화된 것임을 확인함)   
+PNG
+
+다음에 확인할 것
+git status로 확인된 변경 파일(agent_core/, .gitignore 등)을 git add . 및 git commit, git push origin main으로 깃허브에 정식 반영하는 절차 확인   
+PNG
+
+로컬과 원격 간의 충돌 없이 지속적으로 커밋을 관리하는 협업 워크플로 학습
