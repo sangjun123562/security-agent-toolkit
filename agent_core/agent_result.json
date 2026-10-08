@@ -1,0 +1,7 @@
+[
+  {
+    "goal": "jung.hw 계정이 몇 번 실패했나",
+    "tool": "count_failed_logins",
+    "result": 1
+  }
+]

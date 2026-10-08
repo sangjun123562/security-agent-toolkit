@@ -1,0 +1,64 @@
+[
+  {
+    "rule": "ping"
+  },
+  {
+    "rule": "ping"
+  },
+  {
+    "rule": "brute_force",
+    "user": "admin"
+  },
+  {
+    "rule": "brute_force",
+    "user": "admin"
+  },
+  {
+    "rule": "brute_force",
+    "user": "admin"
+  },
+  {
+    "rule": "brute_force",
+    "user": "admin"
+  },
+  {
+    "rule": "brute_force",
+    "user": "admin"
+  },
+  {
+    "id": "brute_force:admin",
+    "rule": "brute_force",
+    "user": "admin",
+    "count": 4
+  },
+  {
+    "id": "brute_force:admin",
+    "rule": "brute_force",
+    "user": "admin",
+    "count": 4
+  },
+  {
+    "id": "brute_force:admin",
+    "rule": "brute_force",
+    "user": "admin",
+    "count": 4
+  },
+  {
+    "id": "brute_force:admin",
+    "rule": "brute_force",
+    "user": "admin",
+    "count": 4
+  },
+  {
+    "id": "password_spraying:185.220.101.34",
+    "rule": "password_spraying",
+    "ip": "185.220.101.34",
+    "accounts": 4
+  },
+  {
+    "id": "night_login:admin:03:17:09",
+    "rule": "night_login",
+    "user": "admin",
+    "time": "03:17:09"
+  }
+]

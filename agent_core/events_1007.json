@@ -1,0 +1,128 @@
+[
+  {
+    "id": "E01",
+    "rule": "brute_force",
+    "target": "admin",
+    "time": "03:15",
+    "detail": "211.45.12.9 에서 admin 로그인 실패 4회"
+  },
+  {
+    "id": "E02",
+    "rule": "night_login",
+    "target": "admin",
+    "time": "03:17",
+    "detail": "실패 4회 직후 같은 IP 에서 admin 로그인 성공"
+  },
+  {
+    "id": "E03",
+    "rule": "password_spraying",
+    "target": "185.220.101.34",
+    "time": "22:15",
+    "detail": "한 IP 가 계정 4개에 차례로 로그인 실패"
+  },
+  {
+    "id": "E04",
+    "rule": "brute_force",
+    "target": "root",
+    "time": "02:15",
+    "detail": "198.51.100.23 에서 root 로그인 실패 6회"
+  },
+  {
+    "id": "E05",
+    "rule": "permission_denied",
+    "target": "svc_backup",
+    "time": "14:31",
+    "detail": "svc_backup 이 /etc/sudoers 접근 시도, 거부됨"
+  },
+  {
+    "id": "E06",
+    "rule": "failed_login",
+    "target": "kim01",
+    "time": "09:12",
+    "detail": "kim01 로그인 실패 1회"
+  },
+  {
+    "id": "E07",
+    "rule": "failed_login",
+    "target": "park.js",
+    "time": "10:03",
+    "detail": "park.js 로그인 실패 1회 뒤 바로 성공"
+  },
+  {
+    "id": "E08",
+    "rule": "night_login",
+    "target": "deploy",
+    "time": "23:58",
+    "detail": "deploy 계정 토큰 만료 경고"
+  },
+  {
+    "id": "E09",
+    "rule": "brute_force",
+    "target": "guest",
+    "time": "23:40",
+    "detail": "203.0.113.61 에서 guest 로그인 실패 5회"
+  },
+  {
+    "id": "E10",
+    "rule": "new_ip_login",
+    "target": "lee.yh",
+    "time": "09:02",
+    "detail": "lee.yh 가 처음 보는 IP 192.0.2.17 에서 로그인"
+  },
+  {
+    "id": "E11",
+    "rule": "failed_login",
+    "target": "choi.mk",
+    "time": "11:20",
+    "detail": "choi.mk 로그인 실패 2회"
+  },
+  {
+    "id": "E12",
+    "rule": "permission_denied",
+    "target": "guest01",
+    "time": "13:07",
+    "detail": "guest01 이 /etc/shadow 접근 시도, 거부됨"
+  },
+  {
+    "id": "E13",
+    "rule": "port_scan",
+    "target": "198.51.100.7",
+    "time": "01:30",
+    "detail": "한 IP 가 1분 동안 포트 120개에 접속 시도"
+  },
+  {
+    "id": "E14",
+    "rule": "failed_login",
+    "target": "jung.hw",
+    "time": "14:05",
+    "detail": "jung.hw 로그인 실패 1회"
+  },
+  {
+    "id": "E15",
+    "rule": "night_login",
+    "target": "svc_batch",
+    "time": "02:41",
+    "detail": "svc_batch 새벽 로그인 실패"
+  },
+  {
+    "id": "E16",
+    "rule": "account_created",
+    "target": "tmp_admin",
+    "time": "03:20",
+    "detail": "admin 로그인 직후 관리자 권한 계정 tmp_admin 생성"
+  },
+  {
+    "id": "E17",
+    "rule": "failed_login",
+    "target": "kim.cs",
+    "time": "22:14",
+    "detail": "kim.cs 로그인 실패 1회"
+  },
+  {
+    "id": "E18",
+    "rule": "config_changed",
+    "target": "firewall",
+    "time": "18:00",
+    "detail": "점검 시간에 ops.kim 이 방화벽 규칙 1개 수정"
+  }
+]

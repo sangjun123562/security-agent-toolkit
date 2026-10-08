@@ -1,0 +1,44 @@
+[
+  {
+    "id": "F01",
+    "rule": "brute_force",
+    "target": "admin",
+    "time": "02:10",
+    "detail": "203.0.113.9 에서 admin 로그인 실패 7회 뒤 성공"
+  },
+  {
+    "id": "F02",
+    "rule": "failed_login",
+    "target": "kim01",
+    "time": "09:05",
+    "detail": "kim01 로그인 실패 1회"
+  },
+  {
+    "id": "F03",
+    "rule": "failed_login",
+    "target": "lee.yh",
+    "time": "09:40",
+    "detail": "lee.yh 로그인 실패 1회 뒤 바로 성공"
+  },
+  {
+    "id": "F04",
+    "rule": "config_changed",
+    "target": "firewall",
+    "time": "18:00",
+    "detail": "점검 시간에 ops.kim 이 방화벽 규칙 1개 수정"
+  },
+  {
+    "id": "F05",
+    "rule": "failed_login",
+    "target": "park.js",
+    "time": "10:12",
+    "detail": "park.js 로그인 실패 1회"
+  },
+  {
+    "id": "F06",
+    "rule": "new_ip_login",
+    "target": "jung.hw",
+    "time": "08:55",
+    "detail": "jung.hw 가 사내 다른 층 IP 에서 로그인"
+  }
+]
