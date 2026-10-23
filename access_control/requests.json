@@ -1,0 +1,69 @@
+[
+  {
+    "id": 1,
+    "user": "seoyeon",
+    "resource": "SETTLE",
+    "action": "QUERY",
+    "permission": "SETTLE:QUERY",
+    "until": "2026-10-27 18:00",
+    "reason": "정산 대조 지원",
+    "requested_at": "2026-10-23 08:30",
+    "status": "reviewing"
+  },
+  {
+    "id": 2,
+    "user": "gaeun",
+    "resource": "SALES",
+    "action": "QUERY",
+    "permission": "SALES:QUERY",
+    "until": "2026-10-28 18:00",
+    "reason": "감사 자료 대응",
+    "requested_at": "2026-10-23 10:30",
+    "status": "rejected",
+    "approver": "security_manager"
+  },
+  {
+    "id": 3,
+    "user": "dami",
+    "resource": "SALES",
+    "action": "QUERY",
+    "permission": "SALES:QUERY",
+    "until": "2026-10-27 18:00",
+    "reason": "인수인계 자료 확인",
+    "requested_at": "2026-10-23 12:00",
+    "status": "reviewing"
+  },
+  {
+    "id": 4,
+    "user": "junho",
+    "resource": "SETTLE",
+    "action": "QUERY",
+    "permission": "SETTLE:QUERY",
+    "until": "2026-10-27 18:00",
+    "reason": "정산 확인",
+    "requested_at": "2026-10-23 09:00",
+    "status": "reviewing"
+  },
+  {
+    "id": 5,
+    "user": "seoyeon",
+    "resource": "ACCOUNT",
+    "action": "QUERY",
+    "permission": "ACCOUNT:QUERY",
+    "until": "2026-10-27 18:00",
+    "reason": "계정 권한 점검",
+    "requested_at": "2026-10-23 07:50",
+    "status": "reviewing"
+  },
+  {
+    "id": 6,
+    "user": "tester",
+    "resource": "SALES",
+    "action": "QUERY",
+    "permission": "SALES:QUERY",
+    "until": "2026-10-27 18:00",
+    "reason": "시험 계정 확인",
+    "requested_at": "2026-10-23 10:00",
+    "status": "reviewing"
+  }
+]
