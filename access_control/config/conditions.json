@@ -1,0 +1,5 @@
+[
+  {"permission": "SALES:CHANGE", "hours": [9, 18], "networks": ["office", "vpn"]},
+  {"permission": "SETTLE:QUERY", "hours": [8, 20], "networks": ["office", "vpn"]},
+  {"permission": "ACCOUNT:CHANGE", "hours": [9, 18], "networks": ["office"]}
+]

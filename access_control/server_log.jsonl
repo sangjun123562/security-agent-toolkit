@@ -1,0 +1,8 @@
+{"time": "2026-10-30T09:00", "user": "seoyeon", "permission": "SALES:CHANGE", "network": "office", "allowed": true, "reason": "역할 권한"}
+{"time": "2026-10-30T18:00", "user": "seoyeon", "permission": "SALES:CHANGE", "network": "office", "allowed": false, "reason": "업무 시간 밖"}
+{"time": "2026-10-30T10:00", "user": "seoyeon", "permission": "SALES:CHANGE", "network": "external", "allowed": false, "reason": "혀용되지 않은 접속 위치"}
+{"time": "2026-10-30T23:00", "user": "seoyeon", "permission": "SALES:QUERY", "network": "external", "allowed": true, "reason": "역할 권한"}
+{"time": "2026-10-30T19:30", "user": "junho", "permission": "SETTLE:QUERY", "network": "vpn", "allowed": true, "reason": "역할 권한"}
+{"time": "2026-10-30T10:00", "user": "junho", "permission": "SETTLE:QUERY", "network": "external", "allowed": false, "reason": "혀용되지 않은 접속 위치"}
+{"time": "2026-10-30T10:00", "user": "gaeun", "permission": "ACCOUNT:CHANGE", "network": "vpn", "allowed": false, "reason": "혀용되지 않은 접속 위치"}
+{"time": "2026-10-30T10:00", "user": "dami", "permission": "SALES:QUERY", "network": "office", "allowed": false, "reason": "퇴사한 계정"}
