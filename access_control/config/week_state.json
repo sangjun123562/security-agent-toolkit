@@ -1,0 +1,23 @@
+{
+  "users": {
+    "seoyeon": {"dept": "영업", "role": "sales", "employed": true},
+    "junho": {"dept": "영업", "role": "finance", "employed": true},
+    "gaeun": {"dept": "IT", "role": "account_admin", "employed": true},
+    "dami": {"dept": "영업", "role": "sales", "employed": false},
+    "batch-night": {"dept": "시스템", "role": "batch", "employed": true},
+    "tester": {"dept": "인턴", "role": "intern", "employed": true}
+  },
+  "role_dept": {
+    "sales": "영업",
+    "finance": "재무",
+    "account_admin": "IT",
+    "batch": "시스템",
+    "intern": "인턴"
+  },
+  "exceptions": [
+    {"id": 3, "user": "dami", "permission": "SALES:QUERY", "expires": "2026-11-03 18:00"},
+    {"id": 6, "user": "seoyeon", "permission": "SETTLE:QUERY", "expires": "2026-11-06 18:00"},
+    {"id": 7, "user": "tester", "permission": "SALES:QUERY", "expires": "2026-11-04 09:00"},
+    {"id": 8, "user": "gaeun", "permission": "SETTLE:QUERY", "expires": "2026-11-13 12:00"}
+  ]
+}
