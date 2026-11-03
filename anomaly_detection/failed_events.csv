@@ -1,0 +1,24 @@
+time,source,user,ip,action,result,hour
+2026-11-02 02:14:08,saas,jiwoo,203.0.113.80,login,실패,2
+2026-11-02 09:12:03,web,,203.0.113.50,POST /login,실패,9
+2026-11-02 09:12:06,web,,203.0.113.50,POST /login,실패,9
+2026-11-02 09:12:09,web,,203.0.113.50,POST /login,실패,9
+2026-11-02 09:12:12,web,,203.0.113.50,POST /login,실패,9
+2026-11-02 09:12:15,web,,203.0.113.50,POST /login,실패,9
+2026-11-02 09:12:25,web,,203.0.113.50,GET /admin,실패,9
+2026-11-02 09:12:27,web,,203.0.113.50,GET /admin/users,실패,9
+2026-11-02 09:20:10,web,,198.51.100.90,GET /.env,실패,9
+2026-11-02 09:20:11,web,,198.51.100.90,GET /wp-login.php,실패,9
+2026-11-02 09:20:12,web,,198.51.100.90,GET /phpmyadmin,실패,9
+2026-11-02 09:22:30,web,,198.51.100.21,GET /board/99,실패,9
+2026-11-02 09:25:02,web,,198.51.100.34,GET /report,실패,9
+2026-11-02 09:33:51,web,,198.51.100.77,GET /admin,실패,9
+2026-11-02 10:05:00,server,gaeun,,ACCOUNT:CHANGE,실패,10
+2026-11-02 10:09:00,server,gaeun,,ACCOUNT:CHANGE,실패,10
+2026-11-02 10:14:00,server,gaeun,,ACCOUNT:CHANGE,실패,10
+2026-11-02 11:02:00,server,dami,,SALES:QUERY,실패,11
+2026-11-02 11:03:00,server,dami,,SALES:QUERY,실패,11
+2026-11-02 11:05:00,server,dami,,SALES:CHANGE,실패,11
+2026-11-02 11:08:00,server,dami,,SALES:QUERY,실패,11
+2026-11-02 11:40:00,server,seoyeon,,SETTLE:QUERY,실패,11
+2026-11-02 18:20:00,server,seoyeon,,SALES:CHANGE,실패,18

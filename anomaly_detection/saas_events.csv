@@ -1,0 +1,15 @@
+time,account,event,ip_address,outcome
+2026-11-02 02:14:08,jiwoo@a-corp.example,login,203.0.113.80,failure
+2026-11-02 09:05:30,seoyeon@a-corp.example,login,198.51.100.9,success
+2026-11-02 09:30:12,junho@a-corp.example,login,192.0.2.41,success
+2026-11-02 10:12:55,gaeun@a-corp.example,login,198.51.100.77,success
+2026-11-02 11:25:40,seoyeon@a-corp.example,file.download,198.51.100.9,success
+2026-11-02 13:50:21,junho@a-corp.example,file.upload,192.0.2.41,success
+2026-11-02 15:20:03,junho@a-corp.example,login,192.0.2.41,success
+2026-11-02 16:02:18,jiwoo@a-corp.example,login,198.51.100.52,success
+2026-11-02 17:38:10,seoyeon@a-corp.example,login,203.0.113.80,success
+2026-11-02 17:40:02,seoyeon@a-corp.example,file.download,203.0.113.80,success
+2026-11-02 17:40:31,seoyeon@a-corp.example,file.download,203.0.113.80,success
+2026-11-02 17:41:05,seoyeon@a-corp.example,file.download,203.0.113.80,success
+2026-11-02 17:41:48,seoyeon@a-corp.example,file.download,203.0.113.80,success
+2026-11-02 17:42:20,seoyeon@a-corp.example,file.download,203.0.113.80,success

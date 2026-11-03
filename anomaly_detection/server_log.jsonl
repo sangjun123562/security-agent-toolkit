@@ -1,0 +1,15 @@
+{"time": "2026-11-02T09:40", "user": "seoyeon", "permission": "SALES:QUERY", "network": "office", "allowed": true, "reason": "역할 권한"}
+{"time": "2026-11-02T09:52", "user": "junho", "permission": "SALES:CHANGE", "network": "office", "allowed": true, "reason": "역할 권한"}
+{"time": "2026-11-02T10:05", "user": "gaeun", "permission": "ACCOUNT:CHANGE", "network": "vpn", "allowed": false, "reason": "허용되지 않은 접속 위치"}
+{"time": "2026-11-02T10:09", "user": "gaeun", "permission": "ACCOUNT:CHANGE", "network": "vpn", "allowed": false, "reason": "허용되지 않은 접속 위치"}
+{"time": "2026-11-02T10:14", "user": "gaeun", "permission": "ACCOUNT:CHANGE", "network": "vpn", "allowed": false, "reason": "허용되지 않은 접속 위치"}
+{"time": "2026-11-02T11:02", "user": "dami", "permission": "SALES:QUERY", "network": "office", "allowed": false, "reason": "퇴사한 계정"}
+{"time": "2026-11-02T11:03", "user": "dami", "permission": "SALES:QUERY", "network": "office", "allowed": false, "reason": "퇴사한 계정"}
+{"time": "2026-11-02T11:05", "user": "dami", "permission": "SALES:CHANGE", "network": "office", "allowed": false, "reason": "퇴사한 계정"}
+{"time": "2026-11-02T11:08", "user": "dami", "permission": "SALES:QUERY", "network": "office", "allowed": false, "reason": "퇴사한 계정"}
+{"time": "2026-11-02T11:40", "user": "seoyeon", "permission": "SETTLE:QUERY", "network": "office", "allowed": false, "reason": "권한 없음"}
+{"time": "2026-11-02T13:15", "user": "junho", "permission": "SALES:QUERY", "network": "office", "allowed": true, "reason": "역할 권한"}
+{"time": "2026-11-02T14:30", "user": "seoyeon", "permission": "SALES:CHANGE", "network": "office", "allowed": true, "reason": "역할 권한"}
+{"time": "2026-11-02T15:05", "user": "junho", "permission": "SALES:QUERY", "network": "office", "allowed": true, "reason": "역할 권한"}
+{"time": "2026-11-02T16:10", "user": "gaeun", "permission": "SALES:QUERY", "network": "office", "allowed": true, "reason": "역할 권한"}
+{"time": "2026-11-02T18:20", "user": "seoyeon", "permission": "SALES:CHANGE", "network": "vpn", "allowed": false, "reason": "업무 시간 밖"}
