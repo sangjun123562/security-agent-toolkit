@@ -1,0 +1,45 @@
+[
+  {
+    "entity": "dami",
+    "score": 60,
+    "grade": "high",
+    "reasons": [
+      "퇴사한 계정"
+    ]
+  },
+  {
+    "entity": "seoyeon",
+    "score": 45,
+    "grade": "mid",
+    "reasons": [
+      "평소와 다른 IP",
+      "대량 다운로드"
+    ]
+  },
+  {
+    "entity": "gaeun",
+    "score": 40,
+    "grade": "mid",
+    "reasons": [
+      "규칙은 허용인데 서버가 거절",
+      "여러 로그 연결"
+    ]
+  },
+  {
+    "entity": "jiwoo",
+    "score": 35,
+    "grade": "mid",
+    "reasons": [
+      "업무 시간 밖 로그인",
+      "평소와 다른 IP"
+    ]
+  },
+  {
+    "entity": "198.51.100.90",
+    "score": 30,
+    "grade": "low",
+    "reasons": [
+      "경로 스캔"
+    ]
+  }
+]

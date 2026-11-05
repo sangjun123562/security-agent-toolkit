@@ -1,0 +1,8 @@
+{
+  "seoyeon": {"role": "sales", "employed": true},
+  "junho": {"role": "finance", "employed": true},
+  "gaeun": {"role": "account_admin", "employed": true},
+  "dami": {"role": "sales", "employed": false},
+  "batch-night": {"role": "batch", "employed": true},
+  "tester": {"role": "intern", "employed": true}
+}
