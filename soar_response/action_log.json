@@ -1,0 +1,30 @@
+[
+  {
+    "time": "15:37:06",
+    "incident": "INC-001",
+    "playbook": "PB-001",
+    "action": "계정 잠금",
+    "result": "계정 dami 잠금 완료"
+  },
+  {
+    "time": "15:37:06",
+    "incident": "INC-001",
+    "playbook": "PB-001",
+    "action": "티켓 생성",
+    "result": "티켓 TCK-1 생성"
+  },
+  {
+    "time": "15:37:06",
+    "incident": "INC-002",
+    "playbook": "PB-002",
+    "action": "전체",
+    "result": "승인 대기"
+  },
+  {
+    "time": "15:37:06",
+    "incident": "INC-005",
+    "playbook": "PB-003",
+    "action": "전체",
+    "result": "승인 대기"
+  }
+]

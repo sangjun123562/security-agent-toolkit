@@ -1,0 +1,14 @@
+{
+  "locked_users": [
+    "dami"
+  ],
+  "blocked_ips": [],
+  "tickets": [
+    {
+      "id": "TCK-1",
+      "incident": "INC-001",
+      "target": "dami"
+    }
+  ],
+  "notifications": []
+}

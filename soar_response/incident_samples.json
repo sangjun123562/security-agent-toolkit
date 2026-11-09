@@ -1,0 +1,55 @@
+[
+  {
+    "id": "INC-001",
+    "entity": "dami",
+    "grade": "high",
+    "score": 60,
+    "reasons": [
+      "퇴사한 계정"
+    ],
+    "status": "탐지됨"
+  },
+  {
+    "id": "INC-002",
+    "entity": "seoyeon",
+    "grade": "mid",
+    "score": 45,
+    "reasons": [
+      "평소와 다른 IP",
+      "대량 다운로드"
+    ],
+    "status": "탐지됨"
+  },
+  {
+    "id": "INC-003",
+    "entity": "gaeun",
+    "grade": "mid",
+    "score": 40,
+    "reasons": [
+      "규칙은 허용인데 서버가 거절",
+      "여러 로그 연결"
+    ],
+    "status": "탐지됨"
+  },
+  {
+    "id": "INC-004",
+    "entity": "jiwoo",
+    "grade": "mid",
+    "score": 35,
+    "reasons": [
+      "업무 시간 밖 로그인",
+      "평소와 다른 IP"
+    ],
+    "status": "탐지됨"
+  },
+  {
+    "id": "INC-005",
+    "entity": "198.51.100.90",
+    "grade": "low",
+    "score": 30,
+    "reasons": [
+      "경로 스캔"
+    ],
+    "status": "탐지됨"
+  }
+]
