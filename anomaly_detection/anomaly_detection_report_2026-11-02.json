@@ -1,0 +1,72 @@
+{
+  "date": "2026-11-02",
+  "event_count": 57,
+  "source_event_counts": {
+    "web": 28,
+    "server": 15,
+    "saas": 14
+  },
+  "finding_count": 8,
+  "records": [
+    {
+      "entity": "dami",
+      "score": 60,
+      "grade": "high",
+      "reasons": [
+        "퇴사한 계정"
+      ]
+    },
+    {
+      "entity": "seoyeon",
+      "score": 45,
+      "grade": "mid",
+      "reasons": [
+        "평소와 다른 IP",
+        "대량 다운로드"
+      ]
+    },
+    {
+      "entity": "gaeun",
+      "score": 40,
+      "grade": "mid",
+      "reasons": [
+        "규칙은 허용인데 서버가 거절",
+        "여러 로그 연결"
+      ]
+    },
+    {
+      "entity": "jiwoo",
+      "score": 35,
+      "grade": "mid",
+      "reasons": [
+        "업무 시간 밖 로그인",
+        "평소와 다른 IP"
+      ]
+    },
+    {
+      "entity": "198.51.100.90",
+      "score": 30,
+      "grade": "low",
+      "reasons": [
+        "경로 스캔"
+      ]
+    }
+  ],
+  "summaries": [
+    {
+      "entity": "dami",
+      "grade": "high",
+      "summary": "대상 'dami'는 등급 'high', 점수 '60점'으로 퇴사한 사람의 계정을 통해 서버에 요청한 내역이 탐지되었습니다. 보안 관제를 위해 해당 계정의 실제 접근 주체와 요청 목적을 먼저 확인하시기 바랍니다."
+    },
+    {
+      "entity": "seoyeon",
+      "grade": "mid",
+      "summary": "seoyeon 계정의 mid 등급(45점) 대상에서 평소와 다른 IP의 SaaS 접속 및 대량 파일 다운로드가 탐지되었습니다. 정상적인 업무 행렬인지 확인하기 위해 사용자 본인에게 직접 연락하여 접속 및 다운로드 사유를 먼저 확인하실 것을 제안합니다."
+    },
+    {
+      "entity": "gaeun",
+      "grade": "mid",
+      "summary": "gaeun 대상의 mid 등급(40점) 이벤트에서 서버의 요청 거절과 짧은 시간 내 다중 로그가 확인되었습니다. 동일 사용자의 최근 접근 기록과 서버 거절 사유를 먼저 확인하시기 바랍니다."
+    }
+  ]
+}
