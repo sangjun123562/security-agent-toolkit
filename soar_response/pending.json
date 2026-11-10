@@ -1,0 +1,6 @@
+[
+  {"id": "INC-002", "entity": "seoyeon", "playbook": "PB-002", "actions": ["담당자 알림", "티켓 생성"], "why": "플레이북 승인 값이 담당자 승인 필요", "status": "분류됨"},
+  {"id": "INC-003", "entity": "gaeun", "playbook": "VIP 확인", "actions": ["담당자 알림", "티켓 생성"], "why": "VIP 계정이라 경로가 승인 필요", "status": "분류됨"},
+  {"id": "INC-005", "entity": "198.51.100.90", "playbook": "PB-003", "actions": ["IP 차단", "티켓 생성"], "why": "플레이북 승인 값이 담당자 승인 필요", "status": "분류됨"}
+]
+

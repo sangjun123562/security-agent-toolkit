@@ -1,0 +1,8 @@
+{
+  "dami": {"employed": false, "vip": false},
+  "seoyeon": {"employed": true, "vip": false},
+  "gaeun": {"employed": true, "vip": true},
+  "jiwoo": {"employed": true, "vip": false},
+  "junho": {"employed": true, "vip": false},
+  "hana": {"employed": true, "vip": false}
+}

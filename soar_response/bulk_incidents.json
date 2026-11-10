@@ -1,0 +1,9 @@
+[
+  {"id": "INC-B01", "entity": "dami", "grade": "high", "score": 60, "reasons": ["퇴사한 계정"], "status": "탐지됨"},
+  {"id": "INC-B02", "entity": "dami", "grade": "high", "score": 60, "reasons": ["퇴사한 계정"], "status": "탐지됨"},
+  {"id": "INC-B03", "entity": "seoyeon", "grade": "high", "score": 60, "reasons": ["퇴사한 계정"], "status": "탐지됨"},
+  {"id": "INC-B04", "entity": "gaeun", "grade": "high", "score": 60, "reasons": ["퇴사한 계정"], "status": "탐지됨"},
+  {"id": "INC-B05", "entity": "jiwoo", "grade": "high", "score": 60, "reasons": ["퇴사한 계정"], "status": "탐지됨"},
+  {"id": "INC-B06", "entity": "junho", "grade": "high", "score": 60, "reasons": ["퇴사한 계정"], "status": "탐지됨"},
+  {"id": "INC-B07", "entity": "hana", "grade": "high", "score": 60, "reasons": ["퇴사한 계정"], "status": "탐지됨"}
+]
