@@ -1,0 +1,42 @@
+[
+  {
+    "action": "계정 잠금",
+    "target": "dami",
+    "incident": "INC-001",
+    "before": "잠기지 않음",
+    "after": "잠김",
+    "reason": "퇴사한 계정"
+  },
+  {
+    "action": "세션 종료",
+    "target": "dami",
+    "incident": "INC-001",
+    "before": "세션 2개",
+    "after": "세션 0개",
+    "reason": "퇴사한 계정"
+  },
+  {
+    "action": "IP 차단",
+    "target": "198.51.100.90",
+    "incident": "INC-005",
+    "before": "차단되지 않음",
+    "after": "차단되지 않음 (확인 실패)",
+    "reason": "방화벽 연결 실패"
+  },
+  {
+    "action": "IP 차단",
+    "target": "192.0.2.41",
+    "incident": "INC-008",
+    "before": "변경 없음",
+    "after": "변경 없음",
+    "reason": "여러 계정이 함께 쓰는 IP 라서 담당자 승인 필요"
+  },
+  {
+    "action": "IP 차단",
+    "target": "192.0.2.10",
+    "incident": "INC-009",
+    "before": "변경 없음",
+    "after": "변경 없음",
+    "reason": "허용 목록 IP 라서 차단하지 않음"
+  }
+]

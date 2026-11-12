@@ -1,0 +1,42 @@
+[
+  {
+    "action": "계정 잠금",
+    "target": "dami",
+    "incident": "INC-001",
+    "before": "잠기지 않음",
+    "after": "잠김",
+    "reason": "퇴사한 계정의 서버 요청"
+  },
+  {
+    "action": "세션 종료",
+    "target": "dami",
+    "incident": "INC-001",
+    "before": "세션 2개",
+    "after": "세션 0개",
+    "reason": "퇴사한 계정의 서버 요청"
+  },
+  {
+    "action": "계정 잠금",
+    "target": "gaeun",
+    "incident": "INC-003",
+    "before": "변경 없음",
+    "after": "변경 없음",
+    "reason": "VIP 계정이라 자동 조치 대상이 아님"
+  },
+  {
+    "action": "계정 잠금",
+    "target": "junho",
+    "incident": "INC-006",
+    "before": "잠김",
+    "after": "잠김",
+    "reason": "이미 잠겨 있어 변경 없음"
+  },
+  {
+    "action": "세션 종료",
+    "target": "junho",
+    "incident": "INC-006",
+    "before": "세션 1개",
+    "after": "세션 0개",
+    "reason": "퇴사 처리 확인"
+  }
+]
