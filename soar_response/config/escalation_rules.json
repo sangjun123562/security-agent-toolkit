@@ -1,0 +1,15 @@
+{
+  "sla_minutes": {"high": 15, "mid": 60, "low": 240},
+  "recipients": {
+    "high": ["kim.sec", "lee.soc", "team.lead"],
+    "mid": ["kim.sec", "lee.soc"],
+    "low": ["kim.sec"]
+  },
+  "merge_window_minutes": 60,
+  "send_gap_minutes": 30,
+  "alert_url": "http://127.0.0.1:5001/alert",
+  "escalation_steps": [
+    {"overdue_minutes": 0, "notify": "team.lead"},
+    {"overdue_minutes": 30, "notify": "soc.head"}
+  ]
+}

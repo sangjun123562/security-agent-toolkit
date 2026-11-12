@@ -1,0 +1,10 @@
+[
+  {"minute": 10, "ticket": "TCK-1", "status": "확인 중", "who": "kim.sec"},
+  {"minute": 45, "ticket": "TCK-1", "status": "해결", "who": "kim.sec"},
+  {"minute": 80, "ticket": "TCK-3", "status": "확인 중", "who": "lee.soc"},
+  {"minute": 90, "ticket": "TCK-6", "status": "확인 중", "who": "kim.sec"},
+  {"minute": 105, "ticket": "TCK-7", "status": "확인 중", "who": "kim.sec"},
+  {"minute": 120, "ticket": "TCK-3", "status": "해결", "who": "lee.soc"},
+  {"minute": 130, "ticket": "TCK-6", "status": "해결", "who": "kim.sec"},
+  {"minute": 140, "ticket": "TCK-4", "status": "확인 중", "who": "lee.soc"}
+]

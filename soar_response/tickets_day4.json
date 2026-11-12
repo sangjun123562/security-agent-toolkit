@@ -1,0 +1,194 @@
+[
+  {
+    "id": "TCK-1",
+    "title": "[high] dami — 퇴사한 계정",
+    "entity": "dami",
+    "rule": "퇴사한 계정",
+    "grade": "high",
+    "playbook": "PB-001",
+    "done": [
+      "계정 잠금: 잠기지 않음 → 잠김",
+      "세션 종료: 세션 2개 → 세션 0개",
+      "계정 잠금: 잠김 → 잠김 (이미 잠겨 있어 변경 없음)",
+      "계정 잠금: 잠김 → 잠김 (이미 잠겨 있어 변경 없음)",
+      "계정 잠금: 잠김 → 잠김 (이미 잠겨 있어 변경 없음)"
+    ],
+    "status": "열림",
+    "next_step": "조치 결과가 맞는지 확인하고 계정이나 IP 상태를 점검한다",
+    "needs_manual": false,
+    "created_at": 0,
+    "updated_at": 95,
+    "sla_due": 15,
+    "count": 4,
+    "incidents": [
+      "INC-201",
+      "INC-205",
+      "INC-209",
+      "INC-210"
+    ],
+    "notified_count": 3,
+    "last_notified": 95,
+    "acked_at": -1,
+    "resolved_at": -1,
+    "escalation_level": 0,
+    "comments": []
+  },
+  {
+    "id": "TCK-2",
+    "title": "[low] 198.51.100.90 — 경로 스캔",
+    "entity": "198.51.100.90",
+    "rule": "경로 스캔",
+    "grade": "low",
+    "playbook": "PB-003",
+    "done": [
+      "IP 차단: 차단되지 않음 → 차단됨",
+      "IP 차단: 차단됨 → 차단됨 (이미 차단되어 변경 없음)"
+    ],
+    "status": "열림",
+    "next_step": "조치 결과가 맞는지 확인하고 계정이나 IP 상태를 점검한다",
+    "needs_manual": false,
+    "created_at": 3,
+    "updated_at": 20,
+    "sla_due": 243,
+    "count": 2,
+    "incidents": [
+      "INC-202",
+      "INC-206"
+    ],
+    "notified_count": 1,
+    "last_notified": 3,
+    "acked_at": -1,
+    "resolved_at": -1,
+    "escalation_level": 0,
+    "comments": []
+  },
+  {
+    "id": "TCK-3",
+    "title": "[mid] gaeun — 규칙은 허용인데 서버가 거절",
+    "entity": "gaeun",
+    "rule": "규칙은 허용인데 서버가 거절",
+    "grade": "mid",
+    "playbook": "VIP 확인",
+    "done": [],
+    "status": "열림",
+    "next_step": "승인할지 거절할지 정하고 정한 사람의 이름을 남긴다",
+    "needs_manual": false,
+    "created_at": 8,
+    "updated_at": 8,
+    "sla_due": 68,
+    "count": 1,
+    "incidents": [
+      "INC-203"
+    ],
+    "notified_count": 1,
+    "last_notified": 8,
+    "acked_at": -1,
+    "resolved_at": -1,
+    "escalation_level": 0,
+    "comments": []
+  },
+  {
+    "id": "TCK-4",
+    "title": "[mid] seoyeon — 대량 다운로드",
+    "entity": "seoyeon",
+    "rule": "대량 다운로드",
+    "grade": "mid",
+    "playbook": "PB-002",
+    "done": [],
+    "status": "열림",
+    "next_step": "승인할지 거절할지 정하고 정한 사람의 이름을 남긴다",
+    "needs_manual": false,
+    "created_at": 12,
+    "updated_at": 12,
+    "sla_due": 72,
+    "count": 1,
+    "incidents": [
+      "INC-204"
+    ],
+    "notified_count": 1,
+    "last_notified": 12,
+    "acked_at": -1,
+    "resolved_at": -1,
+    "escalation_level": 0,
+    "comments": []
+  },
+  {
+    "id": "TCK-5",
+    "title": "[low] 203.0.113.250 — 경로 스캔",
+    "entity": "203.0.113.250",
+    "rule": "경로 스캔",
+    "grade": "low",
+    "playbook": "PB-003",
+    "done": [
+      "IP 차단: 차단되지 않음 → 차단되지 않음 (확인 실패)"
+    ],
+    "status": "열림",
+    "next_step": "조치가 확인되지 않았다. 담당자가 직접 계정이나 IP 상태를 보고 조치한다",
+    "needs_manual": true,
+    "created_at": 30,
+    "updated_at": 30,
+    "sla_due": 270,
+    "count": 1,
+    "incidents": [
+      "INC-207"
+    ],
+    "notified_count": 1,
+    "last_notified": 30,
+    "acked_at": -1,
+    "resolved_at": -1,
+    "escalation_level": 0,
+    "comments": []
+  },
+  {
+    "id": "TCK-6",
+    "title": "[mid] hana — 업무 시간 밖 로그인",
+    "entity": "hana",
+    "rule": "업무 시간 밖 로그인",
+    "grade": "mid",
+    "playbook": "없음",
+    "done": [],
+    "status": "열림",
+    "next_step": "자동 조치가 없는 알림이니 직접 보고 조치가 필요한지 정한다",
+    "needs_manual": false,
+    "created_at": 35,
+    "updated_at": 35,
+    "sla_due": 95,
+    "count": 1,
+    "incidents": [
+      "INC-208"
+    ],
+    "notified_count": 1,
+    "last_notified": 35,
+    "acked_at": -1,
+    "resolved_at": -1,
+    "escalation_level": 0,
+    "comments": []
+  },
+  {
+    "id": "TCK-7",
+    "title": "[high] dami — 퇴사한 계정",
+    "entity": "dami",
+    "rule": "퇴사한 계정",
+    "grade": "high",
+    "playbook": "PB-001",
+    "done": [
+      "계정 잠금: 잠김 → 잠김 (이미 잠겨 있어 변경 없음)"
+    ],
+    "status": "열림",
+    "next_step": "조치 결과가 맞는지 확인하고 계정이나 IP 상태를 점검한다",
+    "needs_manual": false,
+    "created_at": 160,
+    "updated_at": 160,
+    "sla_due": 175,
+    "count": 1,
+    "incidents": [
+      "INC-211"
+    ],
+    "notified_count": 1,
+    "last_notified": 160,
+    "acked_at": -1,
+    "resolved_at": -1,
+    "escalation_level": 0,
+    "comments": []
+  }
+]
